@@ -12,17 +12,21 @@ import { RiMenu3Fill } from "react-icons/ri";
 import Logo from "./Logo";
 import { Link as ScrollLink } from "react-scroll";
 import Socials from "./Socials";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const links = [
-  { name: "home", path: "home" },
-  { name: "about", path: "about" },
-  { name: "services", path: "services" },
-  { name: "testimonials", path: "testimonials" },
-  { name: "contact", path: "contact" },
+  { name: "home", path: "/" },
+  { name: "about", path: "/about" },
+  { name: "services", path: "/services" },
+  { name: "Medical Records", path: "/medical-records" },
+  { name: "contact", path: "/contact" },
 ];
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -42,7 +46,7 @@ const NavMobile = () => {
             </SheetDescription>
           </SheetHeader>
 
-          <ul className="w-full flex flex-col justify-center text-center gap-6 text-white pt-2 pb-10">
+          {/* <ul className="w-full flex flex-col justify-center text-center gap-6 text-white pt-2 pb-10">
             {links.map((link, index) => (
               <li key={index}>
                 <ScrollLink
@@ -59,7 +63,32 @@ const NavMobile = () => {
                 </ScrollLink>
               </li>
             ))}
+          </ul> */}
+
+          <ul className="w-full flex flex-col justify-center text-center gap-6 text-white pt-2 pb-10">
+            {links.map((link, index) => {
+              const isActive = pathname === link.path;
+              return (
+                <motion.li
+                  key={index}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link
+                    href={link.path}
+                    className={`cursor-pointer text-[17px] capitalize transition-colors duration-300 ${
+                      isActive ? "text-[#FFD86F]" : "hover:text-[#FFD86F]"
+                    }`}
+                  >
+                    <span className="font-[var(--font-ubuntu-condensed)]">
+                      {link.name}
+                    </span>
+                  </Link>
+                </motion.li>
+              );
+            })}
           </ul>
+
           <div className="flex items-center justify-center">
             <Socials />
           </div>
