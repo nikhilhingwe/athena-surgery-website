@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --color-primary: #0f3d88;
+  --color-secondary: #ffd86f;
+}
+
+body {
+  font-family: var(--font-ubuntu), sans-serif;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.txt-primary {
+  color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.txt-secondary {
+  color: var(--color-secondary);
+}
+
+.custom-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.custom-container2 {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* h1, h2, .condensed-heading {
+  font-family: var(--font-ubuntu-condensed), sans-serif;
+} */
