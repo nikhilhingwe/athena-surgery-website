@@ -95,7 +95,7 @@ const ServicePageServiceSection = () => {
 
       <div className="px-3 md:px-10">
         <div className="pt-10 pb-5 md:14">
-          <div className="custom-container2 flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-10 py-6 gap-10">
+          <div className="custom-container2 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-6 gap-10">
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: -30 }}
@@ -191,7 +191,7 @@ const ServicePageServiceSection = () => {
 
       <div className="px-3 md:px-10">
         <div className="pt-10 pb-5 md:14">
-          <div className="custom-container2 flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-10 py-6 gap-10">
+          <div className="custom-container2 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-6 gap-10">
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: -30 }}
