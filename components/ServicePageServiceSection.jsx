@@ -8,6 +8,9 @@ import Star from "../public/assets/img/star.png";
 
 import PlasticSurgeryImg from "../public/assets/img/plastic-surgery-s.avif";
 import PainManagementImg from "../public/assets/img/pain-management-s.avif";
+import OrthopediacImg from "../public/assets/img/orthopediac.avif";
+import SpineImg from "../public/assets/img/spine-s.avif";
+import PediatryImg from "../public/assets/img/pediatry-s.avif";
 
 const ServicePageServiceSection = () => {
   return (
@@ -150,7 +153,7 @@ const ServicePageServiceSection = () => {
             >
               <div className="w-full max-w-[500px] h-auto">
                 <Image
-                  src={PlasticSurgeryImg}
+                  src={OrthopediacImg}
                   alt="hero1"
                   className="w-full h-auto object-cover rounded-[10px]"
                 />
@@ -224,7 +227,7 @@ const ServicePageServiceSection = () => {
             >
               <div className="w-full max-w-[500px] h-auto">
                 <Image
-                  src={PlasticSurgeryImg}
+                  src={SpineImg}
                   alt="hero1"
                   className="w-full h-auto object-cover rounded-[10px]"
                 />
@@ -246,7 +249,7 @@ const ServicePageServiceSection = () => {
             >
               <div className="w-full max-w-[500px] h-auto">
                 <Image
-                  src={PlasticSurgeryImg}
+                  src={PediatryImg}
                   alt="hero1"
                   className="w-full h-auto object-cover rounded-[10px]"
                 />

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import AboutImg from "../public/assets/img/about.png";
+import AboutImg from "../public/assets/img/about-mission.avif";
 
 const AboutPageMission = () => {
   return (
@@ -16,8 +16,16 @@ const AboutPageMission = () => {
           viewport={{ once: false, amount: 0.4 }}
           className="flex justify-center"
         >
-          <div>
+          {/* <div>
             <Image src={AboutImg} alt="hero1" />
+          </div> */}
+
+          <div className="w-full max-w-[500px] h-auto">
+            <Image
+              src={AboutImg}
+              alt="hero1"
+              className="w-full h-auto object-cover rounded-[10px]"
+            />
           </div>
         </motion.div>
 
