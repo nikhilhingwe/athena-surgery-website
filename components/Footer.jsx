@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0f3d88] text-white py-14">
+    <footer className="bg-primary text-white py-14">
       <div className="max-w-[1350px] mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="space-y-7">
           <div className="flex items-center gap-2">

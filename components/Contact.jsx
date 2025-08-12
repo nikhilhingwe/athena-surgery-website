@@ -78,7 +78,7 @@ const Contact = () => {
                 name="user_name"
                 placeholder="YOUR FULL NAME"
                 required
-                className="w-full px-4 py-3 rounded-md bg-[#0A2655] text-white placeholder-white"
+                className="w-full px-4 py-3 rounded-md bg-primary text-white placeholder-white"
               />
 
               <div className="flex flex-col md:flex-row gap-4">
@@ -87,14 +87,14 @@ const Contact = () => {
                   name="user_phone"
                   placeholder="YOUR PHONE"
                   required
-                  className="w-full px-4 py-3 rounded-md bg-[#0A2655] text-white placeholder-white"
+                  className="w-full px-4 py-3 rounded-md bg-primary text-white placeholder-white"
                 />
                 <input
                   type="email"
                   name="user_email"
                   placeholder="YOUR EMAIL"
                   required
-                  className="w-full px-4 py-3 rounded-md bg-[#0A2655] text-white placeholder-white"
+                  className="w-full px-4 py-3 rounded-md bg-primary text-white placeholder-white"
                 />
               </div>
 
@@ -103,7 +103,7 @@ const Contact = () => {
                 placeholder="WRITE YOUR BRIEF MESSAGE HERE.."
                 required
                 rows="4"
-                className="w-full px-4 py-3 rounded-md bg-[#0A2655] text-white placeholder-white resize-none"
+                className="w-full px-4 py-3 rounded-md bg-primary text-white placeholder-white resize-none"
               />
 
               <div className="flex justify-center md:justify-start">
